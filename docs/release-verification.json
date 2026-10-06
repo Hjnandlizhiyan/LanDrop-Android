@@ -1,0 +1,10 @@
+{
+  "version": "0.1.2",
+  "apkBytes": 1926868,
+  "sha256": "aa787771da15a0ccec0c896289031bbed3b011bda102b1480223cd95821b597f",
+  "bundledAssetsMatchSource": 12,
+  "nativeFeatureSymbolsPresent": true,
+  "signatureVerified": true,
+  "certificateSha256": "a239d7e4da0920044248469e61df80223fa125853a6d1c7ddc174d6c1dc47de9",
+  "releaseSignatureDiffersFromDebug": true
+}

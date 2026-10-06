@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>局域传送 · 让分享近一点</title><link rel="icon" href="/logo.png" type="image/png"><link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/mobile.css"></head>
+<body><header class="mobile-brand"><img src="/logo.png" alt="局域传送少女形象"><div><strong>LanDrop</strong><small>CONNECT. SHARE. SIMPLIFY.</small></div><span>安卓版本</span></header>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7 18-4-7-7-4 18-7ZM10 14 21 3"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+<symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="3" width="15" height="11" rx="2"/><path d="M6 19h7m-3-5v5"/><rect x="17" y="10" width="5" height="11" rx="1"/></symbol>
+<symbol id="i-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2 7M3 4v7h7m2-4v5l3 2"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="m9 3-.8 3-2.5 1.4-3 .2v4l2.3 2.1v2.8L3.8 19l3.5 2 2.8-1.2h2.8l2.8 1.2 3.5-2-1.2-2.5v-2.8l2.3-2.1v-4l-3-.2L15.8 6 15 3Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8m-4-5v5"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><path d="M5 17V5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12M2 17h20l-1 3H3l-1-3Z"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Zm0 2h18"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 0v6h6M8 13h8m-8 4h5"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-6 5 7"/></symbol>
+<symbol id="i-text" viewBox="0 0 24 24"><path d="M4 5h16M12 5v15m-4 0h8M4 5v3m16-3v3"/></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="2"/><rect x="8" y="2" width="8" height="6" rx="2"/><path d="M9 12h6m-6 4h6"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5m-4-5a8 8 0 0 1 13-2l2 2M4 17l2 2a8 8 0 0 0 13-2"/></symbol>
+<symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0m-10 4a5 5 0 0 1 6 0"/><circle cx="12" cy="20" r=".6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6l8-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+</defs></svg>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="局域传送首页"><img src="/logo.png" alt="局域传送二次元少女 Logo"><span>局域传送<small>LAN DROP</small></span></a>
+  <div class="workspace-label">我的工作空间</div>
+  <nav aria-label="主导航">
+    <button class="nav-item active" data-page="home"><svg><use href="#i-grid"/></svg>传输工作台</button>
+    <button class="nav-item" data-page="devices"><svg><use href="#i-devices"/></svg>配置设备<span class="nav-count" id="peer-count">0</span></button>
+    <button class="nav-item" data-page="history"><svg><use href="#i-history"/></svg>传输记录</button>
+    <button class="nav-item" data-page="settings"><svg><use href="#i-settings"/></svg>偏好设置</button>
+  </nav>
+  <div class="sidebar-spacer"></div>
+  <div class="local-note"><span class="note-icon"><img class="note-mascot" src="/logo.png" alt="局域传送少女形象"></span><strong>分享，就在你身边</strong><p>通过局域网直接传输<br>文件无需经过云端</p><span class="note-line"></span></div>
+  <div class="self-card"><span class="self-icon"><svg><use href="#i-monitor"/></svg></span><div><strong id="self-name">这台手机</strong><span><i class="status-dot"></i> 本机设备</span></div><button class="icon-button" data-page="settings" title="设备设置"><svg><use href="#i-settings"/></svg></button></div>
+  <div class="sidebar-footer">LAN DROP <span>v0.1.2</span></div>
+</aside>
+<main>
+  <header class="topbar"><span class="breadcrumb">工作空间 <span>/</span> <strong id="breadcrumb-title">传输工作台</strong></span><div class="network-pill" id="network-pill"><i class="status-dot"></i><span>局域网传输已开启</span><svg><use href="#i-wifi"/></svg></div></header>
+  <div class="main-content">
+    <section class="page-heading"><div><span class="eyebrow">CONNECT. SHARE. SIMPLIFY.</span><h1 id="page-title">让分享，近一点<span class="heading-dot">。</span></h1><p id="page-subtitle">两台设备都运行软件，手动配置后直接传输。</p></div><button class="button secondary" id="open-folder"><svg><use href="#i-folder"/></svg>接收位置<svg class="small"><use href="#i-arrow"/></svg></button></section>
+    <div id="warning" class="warning-banner" hidden></div>
+    <section id="home-view" class="view">
+      <div class="work-grid">
+        <section class="panel send-panel"><div class="panel-heading"><h2>发起传输</h2><span class="subtle">从这里开始一次分享</span></div>
+          <div class="tabs" role="tablist" aria-label="传输类型"><button class="tab active" data-tab="files" role="tab" aria-selected="true"><svg><use href="#i-folder"/></svg>文件 / 图片</button><button class="tab" data-tab="text" role="tab" aria-selected="false"><svg><use href="#i-text"/></svg>文字</button><button class="tab" data-tab="clipboard" role="tab" aria-selected="false"><svg><use href="#i-clipboard"/></svg>剪贴板</button></div>
+          <div id="files-pane" class="send-pane"><div class="drop-zone" id="drop-zone" tabindex="0" role="button" aria-label="选择要发送的文件"><div class="drop-art"><span class="art-file back"><svg><use href="#i-image"/></svg></span><span class="art-file front"><svg><use href="#i-file"/></svg></span><span class="art-spark spark-one">+</span><span class="art-spark spark-two"></span><span class="art-arrow"><svg><use href="#i-arrow"/></svg></span></div><h3>点击选择要分享的文件</h3><p>文档、照片、视频… 想分享的，都可以</p><button class="button primary compact" id="choose-files"><svg><use href="#i-plus"/></svg>选择文件</button><span class="drop-hint">支持多文件 · 单个文件最大 20 GB</span></div><div id="file-list" class="file-list" hidden></div></div>
+          <div id="text-pane" class="send-pane" hidden><label class="input-label" for="text-content">想分享什么？</label><textarea id="text-content" placeholder="输入文字、粘贴链接，或记录一段灵感…" maxlength="50000"></textarea><div class="text-meta"><span id="text-counter">0 字符</span><button class="text-button" id="paste-text"><svg><use href="#i-clipboard"/></svg>从剪贴板粘贴</button></div><p class="pane-note" id="clipboard-note" hidden>可从系统分享菜单发送文件；长按输入框粘贴文字。</p></div>
+          <div class="send-bottom"><div class="destination"><span>发送至</span><select id="target-device" aria-label="选择接收设备"><option value="">请选择一台设备</option></select></div><button class="button primary" id="send-button" disabled>发送<svg><use href="#i-send"/></svg></button></div>
+        </section>
+        <aside class="right-column"><section class="panel device-panel"><div class="panel-heading"><h2>这台手机</h2><span class="tiny-label">THIS DEVICE</span></div><div class="my-device-visual"><span class="monitor-frame"><svg><use href="#i-monitor"/></svg></span><span class="device-online"><i class="status-dot"></i>在线</span></div><h3 id="device-name">这台手机</h3><p class="device-platform" id="device-platform">Android 设备</p><div class="device-details"><div><span>局域网地址</span><button id="copy-address" class="address-copy" title="复制连接地址"><strong id="local-address">正在获取</strong><svg><use href="#i-copy"/></svg></button></div><div><span>连接方式</span><strong>局域网直连 <i class="status-dot"></i></strong></div></div><div class="device-tip"><svg><use href="#i-info"/></svg><span>让另一台设备也打开局域传送<br>在两台软件中互相添加连接地址</span></div></section><div class="privacy-note"><svg><use href="#i-shield"/></svg><div><strong>点对点传输，本地保存</strong><p>无需登录，也无需上传到云端</p></div></div></aside>
+      </div>
+      <section class="section-block"><div class="section-heading"><div><h2>配置设备 <span class="count-badge" id="nearby-count">0</span></h2><p>只连接你手动添加的设备，配置自动保存</p></div><div class="section-actions"><button class="text-button" id="scan-button"><svg><use href="#i-refresh"/></svg>检查连接</button><button class="button secondary compact" data-action="add-peer"><svg><use href="#i-plus"/></svg>添加设备</button></div></div><div id="nearby-devices" class="peer-grid"></div></section>
+      <section class="section-block"><div class="section-heading"><div><h2>最近传输</h2><p>每一次分享，都有迹可循</p></div><button class="text-button" data-page="history">查看全部<svg><use href="#i-arrow"/></svg></button></div><div id="recent-history" class="panel history-panel"></div></section>
+      <footer class="main-footer"><span><i class="status-dot"></i> 让设备连接，让分享发生。</span><span>为你的局域网而生</span></footer>
+    </section>
+    <section id="devices-view" class="view" hidden>
+      <section class="panel connection-setup"><div class="panel-heading"><h2>手动连接另一台设备</h2><span class="tiny-label">MANUAL CONNECTION</span></div>
+        <p>先在两台设备上运行同一份软件，再分别添加对方的 IP 地址和端口。</p>
+        <div class="setup-own-address"><span>这台手机的连接地址</span><div id="setup-local-address">正在获取</div></div>
+        <form id="peer-form"><label class="input-label" for="peer-address">另一台设备的连接地址</label><div class="connection-input-row"><input id="peer-address" placeholder="192.168.1.8:45878" required autocomplete="off"><button type="submit" class="button primary" id="connect-button"><svg><use href="#i-plus"/></svg>保存设备</button></div></form>
+        <p id="connection-error" class="connection-error" role="alert" hidden></p>
+        <p class="field-help">选当前 Wi-Fi 或以太网的地址，避开未使用的虚拟网卡。连接最多等待 30 秒。配置需要两端各做一次。</p>
+      </section>
+      <div class="section-heading"><div><h2>已配置设备</h2><p>设备配置会保留，重启后自动检查连接</p></div><button class="text-button" id="check-connections"><svg><use href="#i-refresh"/></svg>检查连接</button></div><div id="all-devices" class="peer-grid"></div>
+      <div class="connection-guide panel"><h3>另一台设备怎么开启？</h3><p>1. 在另一台电脑或安卓手机上安装并打开 LanDrop。</p><p>2. 在两台软件的“偏好设置”中开启“局域网传输”。</p><p>3. 在两台软件的“配置设备”中，分别输入另一台的连接地址并保存。</p><p>4. 回到工作台，选择设备并发送；接收端无需确认，发送和接收成功都会显示少女表情提示。</p><p class="subtle">连接失败时，手动确认两台设备的网络、IP 和端口，以及防火墙是否允许该软件通信。软件不会自动修改防火墙。</p></div>
+    </section>
+    <section id="history-view" class="view" hidden><div class="section-heading"><div class="filter-tabs"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="outgoing">已发送</button><button class="filter" data-filter="incoming">已接收</button></div><button class="text-button" id="clear-history">清空记录</button></div><div id="full-history" class="panel history-panel"></div></section>
+    <section id="settings-view" class="view" hidden><form class="panel settings-panel" id="settings-form"><div class="panel-heading"><h2>设备与接收</h2><span class="subtle">让它更适合你的习惯</span></div><label class="input-label" for="settings-name">设备名称</label><input id="settings-name" maxlength="40" placeholder="给这台手机起个名字"><p class="field-help">这个名称会展示给局域网中的其他设备。</p><label class="input-label" for="settings-language">界面语言</label><select id="settings-language"><option value="zh-CN">简体中文</option><option value="en">English</option></select><p class="field-help">切换后立即生效，并自动保存。</p><label class="input-label">接收文件夹</label><div class="folder-setting"><span id="receive-directory"></span><button type="button" class="button secondary compact" id="choose-folder">选择文件夹</button></div><p class="field-help" id="folder-help">选择本机文件夹后，接收文件会直接保存到那里。默认应用文件夹会随卸载删除，请先另存重要文件。</p><div class="setting-row"><div><strong>启用局域网传输</strong><p>两台设备都开启后，即可与已配置设备互传文件和文字。</p></div><label class="switch"><input type="checkbox" id="lan-enabled" aria-label="启用局域网传输"><span></span></label></div><div class="receive-mode-note"><svg><use href="#i-check"/></svg>已配置设备直接接收，无需弹窗确认；未配置设备无法发送。</div><div class="settings-save"><button type="submit" class="button primary">保存设置<svg><use href="#i-check"/></svg></button></div></form><section class="panel community-panel" aria-labelledby="community-heading"><div class="panel-heading"><h2 id="community-heading">作者与社区</h2><span class="subtle">关注更新，交流使用心得</span></div><div class="community-grid">
+<a class="community-entry" data-community-link="bilibili" href="https://space.bilibili.com/521952225" target="_blank" rel="noopener noreferrer"><span class="community-mark" aria-hidden="true">B</span><span class="community-info"><strong>Bilibili 主页</strong><small>在浏览器中打开</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<a class="community-entry" data-community-link="github" href="https://github.com/Hjnandlizhiyan" target="_blank" rel="noopener noreferrer"><span class="community-mark" aria-hidden="true">GH</span><span class="community-info"><strong>GitHub 主页</strong><small>在浏览器中打开</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<a class="community-entry" data-community-link="website" href="https://www.deepseeklover.com" target="_blank" rel="noopener noreferrer"><span class="community-mark" aria-hidden="true">DS</span><span class="community-info"><strong>DeepSeekLover 官网</strong><small>在浏览器中打开</small></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<button type="button" class="community-entry" id="copy-qq-group"><span class="community-mark" aria-hidden="true">QQ</span><span class="community-info"><strong>QQ 交流群</strong><small>305402575</small></span><span class="community-copy">复制群号</span></button>
+</div></section><div class="quit-row"><span>停止传输并退出</span><button id="quit-app" class="button secondary">退出</button></div><div class="panel about-panel"><img src="/logo.png" alt="局域传送二次元少女 Logo"><div><h3>局域传送 <span>0.1.2 · Android</span></h3><p>手机与电脑、手机与手机，在同一局域网直接互传。后台接收时显示通知；从通知可停止传输。当前内容未端到端加密，请在可信网络中使用。</p></div></div></section>
+  </div>
+</main>
+<input type="file" id="file-input" multiple hidden>
+<dialog id="message-dialog"><div class="dialog-heading"><h2>文字消息</h2><button class="icon-button" data-close="message-dialog" aria-label="关闭"><svg><use href="#i-x"/></svg></button></div><pre id="received-message"></pre><div class="dialog-actions"><button class="button secondary" id="delete-open-message">删除本机记录</button><button class="button primary" id="copy-message"><svg><use href="#i-copy"/></svg>复制文字</button></div></dialog>
+<aside id="success-notices" class="success-notices" aria-label="传输成功提示"></aside>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/i18n.js"></script>
+<script src="/native.js"></script>
+<script src="/app.js"></script>
+<script src="/community-links.js"></script>
+<script src="/community.js"></script>
+</body></html>

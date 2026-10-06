@@ -1,0 +1,8 @@
+classes/
+json.jar
+runs/
+android-ui-*/
+*.png
+*.log
+window.xml
+debug-desktop/

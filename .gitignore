@@ -1,0 +1,40 @@
+# Local settings, IDE state, and build output
+.gradle/
+.idea/
+**/build/
+dist/
+captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+local.properties
+.DS_Store
+
+# Release binaries belong in GitHub Releases
+app/release/
+*.apk
+*.aab
+*.apks
+
+# Signing credentials and private files
+*.jks
+*.keystore
+*.key
+*.pem
+*.pfx
+*.p12
+keystore.properties
+signing.properties
+key.properties
+.env
+.env.*
+
+# Verification dependencies and generated results
+node_modules/
+verification/classes/
+verification/json.jar
+verification/runs/
+verification/android-ui-*/
+verification/community-verification/
+verification/debug-desktop/
+*.log

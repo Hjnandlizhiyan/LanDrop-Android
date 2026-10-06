@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": [
+    "apkTextBothWays",
+    "apkFilesBothWays",
+    "systemFilePicker",
+    "language",
+    "fourPageLayouts",
+    "safDirectory",
+    "backgroundReceiving"
+  ],
+  "errors": []
+}
